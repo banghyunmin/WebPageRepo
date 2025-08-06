@@ -12,7 +12,7 @@ const Summer2025Page = () => {
     document.title = "HONGCHUN TRIP";
   }, []);
 
-  const API_URL = 'https://hmbang.xyz/api/summer2025Schedules';
+  const API_URL = process.env.REACT_APP_API_SUMMER_2025;
   const startDate = '2025-08-14';
   const endDate = '2025-08-15';
   const myNoticeList = [

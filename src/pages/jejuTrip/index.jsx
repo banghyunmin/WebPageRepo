@@ -12,7 +12,7 @@ const JejuTripPage = () => {
     document.title = "JEJU TRIP";
   }, []);
 
-  const API_URL = 'https://hmbang.xyz/api/jejuTripSchedules';
+  const API_URL = process.env.REACT_APP_API_JEJU_TRIP;
   const startDate = '2025-09-11';
   const endDate = '2025-09-14';
   const myNoticeList = [
