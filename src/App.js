@@ -5,11 +5,12 @@ import MongoViewerEntry from './pages/MongoViewerEntry';
 import MongoViewerCollection from './pages/MongoViewerCollection';
 import MyPage from './pages/home'
 import ProductsPage from './pages/prodcuts'
-import JejuPage from './pages/jeju'
-import JejuTripPage from './pages/jejuTrip'
-import Summer2025Page from './pages/summer2025'
+// import JejuPage from './pages/jeju'
+// import JejuTripPage from './pages/jejuTrip'
+// import Summer2025Page from './pages/summer2025'
 import SurveyPage from './pages/forms'
 import Contact from './components/home/Contact'
+import TripPageAdapter from './pages/Tripcommon/TripPageAdapter';
 
 function App() {
   return (
@@ -32,9 +33,9 @@ function App() {
         <Route path="/products" element={<ProductsPage />} /> 
 
 
-        <Route path="/jeju" element={<JejuPage />} /> 
-        <Route path="/jejuTrip" element={<JejuTripPage />} /> 
-        <Route path="/summer2025" element={<Summer2025Page />} /> 
+        <Route path="/jeju" element={<TripPageAdapter tripType="jeju" />} />
+        <Route path="/jejuTrip" element={<TripPageAdapter tripType="jejuTrip" />} />
+        <Route path="/summer2025" element={<TripPageAdapter tripType="summer2025" />} />
         <Route path="/survey" element={<SurveyPage />} /> 
       </Routes>
     </Router>
